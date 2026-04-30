@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Supply Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: #111111; color: #d1d5db; position: relative;">
+
+<div style="background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.95)), url('images/content_background.jpg') fixed center/cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+
+<header>
+    <h2 style="color: #facc15; font-weight: bold; padding: 0 10px;">SUPPLY SOLUTIONS</h2>
+    <nav>
+        <a href="index.html" class="active-link">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="artists.html">Artists</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="section hero-slider" style="padding: 0; position: relative; overflow: hidden;">
+    <div class="slider-container" style="height: 90vh; position: relative;">
+        <img class="slide active" src="images/hero1.jpg" alt="Arena Concert" style="width: 100%; height: 100%; object-fit: cover;">
+        <img class="slide" src="images/hero2.jpg" alt="Stage Rigging" style="width: 100%; height: 100%; object-fit: cover;">
+        <img class="slide" src="images/hero3.jpg" alt="Dynamic Lighting" style="width: 100%; height: 100%; object-fit: cover;">
+        
+        <div class="hero-content" style="position: absolute; top: 50%; left: 15%; transform: translateY(-50%); max-width: 600px; text-align: left; z-index: 10;">
+            <h1 style="color: #facc15; font-size: 52px; margin-bottom: 15px;">We Make Your Events Unforgettable</h1>
+            <p style="color: #d1d5db; font-size: 18px; margin-bottom: 25px;">From Concerts to Corporate to Weddings. The Complete Event Organisers</p>
+            <a href="contact.html">
+                <button style="background: #facc15; color: black; padding: 15px 30px; font-weight: bold;">BOOK AN EVENT</button>
+            </a>
+        </div>
+        
+        <div style="position: absolute; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 10;">
+            <button onclick="prevSlide()" style="background: rgba(0,0,0,0.5); color: white; padding: 10px;">←</button>
+            <button onclick="nextSlide()" style="background: rgba(0,0,0,0.5); color: white; padding: 10px;">→</button>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="text-align: center; margin-top: 50px;">
+    <h2>Featured Artist Highlights</h2>
+    <p style="margin-bottom: 30px;">We hold exclusive booking access to some of the biggest names.</p>
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        
+        <div class="card artist-card" style="text-align: center;">
+            <img src="images/artist1.jpg" alt="Atif Aslam" style="width: 100%; border-radius: 5px; margin-bottom: 15px;">
+            <h3>Atif Aslam</h3>
+            <p style="margin-top: 10px;">Global icon, premium arena performances.</p>
+        </div>
+        
+        <div class="card artist-card" style="text-align: center;">
+            <img src="images/artist2.jpg" alt="Bayaan" style="width: 100%; border-radius: 5px; margin-bottom: 15px;">
+            <h3>Bayaan</h3>
+            <p style="margin-top: 10px;">The leading voice in alternative rock.</p>
+        </div>
+        
+        <div class="card artist-card" style="text-align: center;">
+            <img src="images/artist3.jpg" alt="Hasan Raheem" style="width: 100%; border-radius: 5px; margin-bottom: 15px;">
+            <h3>Hasan Raheem</h3>
+            <p style="margin-top: 10px;">Modern indie-pop sensasation.</p>
+        </div>
+
+    </div>
+    <a href="artists.html">
+        <button style="background: #111111; color: #facc15; border: 2px solid #facc15; padding: 10px 20px; margin-top: 20px;">VIEW ALL ARTISTS</button>
+    </a>
+</section>
+
+<section class="section" style="text-align: center; margin-top: 50px;">
+    <h2>Client Success Stories</h2>
+    <p style="margin-bottom: 30px;">Direct feedback proving our professionalism and dedication.</p>
+    
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        
+        <div class="card" style="width: 100%; max-width: 600px; margin-bottom: 20px;">
+            <h3>"Exceeded Expectations"</h3>
+            <p style="margin-top: 10px;">The sound and lighting were perfect. They worked professionally, and executed the entire concert without a single technical issue.</p>
+            <br>
+            <small>- University Event Coordinator</small>
+        </div>
+
+        <div class="card" style="width: 100%; max-width: 600px; margin-bottom: 20px;">
+            <h3>"The Best in the Business"</h3>
+            <p style="margin-top: 10px;">Gave us the best price for our university concert and provided a great experience from planning to the final song. Highly recommend!</p>
+            <br>
+            <small>- Student Council President</small>
+        </div>
+
+    </div>
+    <a href="reviews.html">
+        <button style="background: #111111; color: #facc15; border: 2px solid #facc15; padding: 10px 20px; margin-top: 20px;">READ MORE REVIEWS</button>
+    </a>
+</section>
+
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 20;">
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" style="background: rgba(2, 6, 23, 0.9); color: white;">
+        ↑ Top
+    </button>
+</div>
+
+<footer>
+    <p>© 2026 Supply Solutions. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

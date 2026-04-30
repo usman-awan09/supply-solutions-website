@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio - Supply Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>Supply Solutions</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="artists.html">Artists</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="section" style="text-align: center;">
+    <h2 style="margin-bottom: 30px;">Past Events Gallery</h2>
+    
+    <div class="card" style="max-width: 800px; width: 100%; margin: 0 auto; display: block; padding: 30px;">
+        
+        <div class="slider-container">
+            <img class="slide active" src="images/event1.jpg" alt="LGSI Model UN Concert" style="width: 100%; border-radius: 5px;">
+            <img class="slide" src="images/event2.jpg" alt="Ernst & Young Conference" style="width: 100%; border-radius: 5px;">
+            <img class="slide" src="images/event3.jpg" alt="Lighting Setup" style="width: 100%; border-radius: 5px;">
+            
+            <div style="margin-top: 20px; display: flex; justify-content: center; gap: 15px;">
+                <button onclick="prevSlide()">Previous</button>
+                <button onclick="nextSlide()">Next</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Supply Solutions</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
